@@ -2,6 +2,9 @@ const express = require('express');
 const axios = require('axios');
 
 const app = express();
+
+require('dotenv').config()
+
 app.use(require('cors')());
 
 app.get('/', async (req: any, res: any) => {
@@ -10,7 +13,7 @@ app.get('/', async (req: any, res: any) => {
     const options = {
       responseType: 'stream',
       headers: {
-        referer: 'https://www.nettruyen.com',
+        referer: process.env.CRAWL_URL,
       },
     };
     const response = await axios.get(src, options);

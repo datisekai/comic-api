@@ -1,12 +1,13 @@
 import { load } from 'cheerio';
 import axios from 'axios';
+require('dotenv').config()
 
 type Status = 'all' | 'completed' | 'updating';
 class ComicsApi {
   private domain: string;
 
   constructor() {
-    this.domain = 'https://www.nettruyen.com';
+    this.domain = process.env.CRAWL_URL as string;
   }
 
   private async createRequest(path: string): Promise<any> {

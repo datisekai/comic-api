@@ -2,10 +2,6 @@
 
 Vietnamese Comics API for **CLIENT** using scraping technique
 
-## ⚠️ Unofficial API from [Nettruyen](https://nettruyen.com)
-
-### **Base URL**: https://comics-api.vercel.app
-
 ## Usage
 
 ### **Trending**

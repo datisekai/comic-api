@@ -3,21 +3,12 @@
   "version": "2.7.4",
   "description": "Vietnamese Comics API for Node using scraping technique",
   "main": "index.ts",
-  "repository": {
-    "url": "https://github.com/pth-1641/Comics-API",
-    "type": "git"
-  },
-  "homepage": "https://github.com/pth-1641/Comics-API",
   "keywords": [
     "api",
     "comics",
     "comics-api",
     "scaping"
   ],
-  "author": {
-    "name": "pth-1641",
-    "email": "pth16042001@gmail.com"
-  },
   "license": "MIT",
   "scripts": {
     "dev": "nodemon api/index.ts",
@@ -27,6 +18,7 @@
     "axios": "^1.4.0",
     "cheerio": "^1.0.0-rc.12",
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2"
   },
   "devDependencies": {
